@@ -1,0 +1,2478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme name="MyBB Master Style" version="1408" myversion="1000">
+<stylesheets>
+<stylesheet name="mytracker.css" version="1408" myversion="1000"><![CDATA[input.button_yes {
+	background: #D6ECA6;
+	border: 3px double #8DC93E;
+	padding: 4px 6px;
+	font-weight: bold;
+	margin-right: 3px;
+}
+
+input.button_no {
+	background: #ECA6D6;
+	border: 3px double #C93E8D;
+	padding: 4px 6px;
+	font-weight: bold;
+}
+
+.label_radio_yes, .label_radio_on, .label_radio_no, .label_radio_off {
+	padding: 4px 6px;
+	margin-right: 5px;
+	display: block;
+	width: 60px;
+	float: left;
+}
+
+.label_radio_yes, .label_radio_on {
+	background: #D6ECA6;
+	border: 1px solid #8DC93E;
+}
+
+.label_radio_no, .label_radio_off {
+	background: #ECA6D6;
+	border: 1px solid #C93E8D;
+}
+
+input.radio_input {
+	vertical-align: middle;
+	margin: 0;
+	margin-right: 9px;
+}
+
+.margin_left {
+	margin-left: 1.5em;
+}
+
+#flash_message {
+	margin: 5px 0;
+	padding: 10px 2px 10px 24px;
+	font-weight: bold;
+	font-size:11px;
+	background: #efefef;
+	border: 1px solid #ccc;
+}
+
+#flash_message.error {
+	border: 1px solid #FC6;
+	background: #FFC url(images/tracker/admin/error.gif) no-repeat 4px 9px;
+	color: #C00;
+}
+
+#flash_message.success {
+	border: #080 1px solid;
+	color: #080;
+	background: #E8FCDC url(images/tracker/admin/success.gif) no-repeat 4px 9px;
+}
+
+.border_wrapper {
+	border: 1px solid #0F5C8E;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 14px;
+}
+
+* html .border_wrapper {
+	height: 1px;	
+}
+
+.border_wrapper div.title {
+	background: #016DB1 url(images/thead_bg.gif) repeat-x top left;
+	color: #fff;
+	padding: 6px 4px;
+	font-size: 100%;
+	text-align: left;
+	font-weight: bold;
+}
+
+.border_wrapper div.title a {
+	color: #fff;
+	text-decoration: none;
+}
+
+table.general {
+	background: #ccc;
+	width: 100%;
+}
+
+table.general td {
+	border-top: 1px solid #fafafa;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #fafafa;
+}
+
+table.bottom_cell_border td {
+	border-right: 0;
+	border-left: 0;
+}
+
+
+table.general td {
+	background: #f5f5f5;
+	padding: 6px;
+}
+
+table.general th {
+	background: #ADCBE6;
+	text-align: left;
+	color: #000;
+	padding: 5px;
+	font-size: 96%;
+	font-weight: bold;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
+}
+
+table.general th a, table.general th {
+	color: #000;
+	text-decoration: none;
+}
+
+
+table.general .alt_row td {
+	background: #f1f1f1;
+}
+
+/* Side Menu
+From MyBB's ACP*/
+
+#left_menu {
+	width: 200px;
+	color: #000;
+	padding: 0;
+	margin: 0;
+	float: left;
+	font-size: 11px;
+}
+
+#left_menu div.left_menu_box {
+	border: 1px solid #ccc;
+	background: #fff;
+	list-style: none;
+	margin: 0px;
+	padding: 5px;
+}
+
+#left_menu div.left_menu_box div.title {
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+}
+
+#left_menu div.left_menu_box ul.tracker_menu {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#left_menu div.left_menu_box ul.tracker_menu li a {
+	display: block;
+	padding: 6px 15px;
+	border-bottom: 1px solid #ddd;
+}
+
+#left_menu div.left_menu_box ul.tracker_menu li.active a {
+	font-weight: bold;
+	color: #000;
+}
+
+#left_menu div.left_menu_box ul.tracker_menu li a:hover {
+	background-color: #efefef;
+	text-decoration: none;
+}
+/* Fix IE. Hide from IE Mac \*/
+* html #left_menu li a, , * html #left_menu li { 
+	height: 1%;
+}
+
+select {
+	width: 150px;
+	margin: 0;
+}
+
+.vis_border {
+	padding: 5px;
+	border: 1px solid #CCCCCC;
+}
+
+.mediumtext {
+	color:#000000;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.grey {
+	color:#666666;
+}
+
+.nav_tabs {
+	margin-bottom: 10px;
+}
+
+.nav_tabs ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	height: 32px;
+	border-bottom: 1px solid #ccc;
+}
+
+.nav_tabs li {
+	float: left;
+	padding-right: 5px;
+}
+
+.nav_tabs li.right {
+	float: right;
+	padding-left: 5px;
+	padding-right: 0;
+}
+
+.nav_tabs li a {
+	float: left;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	display: block;
+	font-family: 'Lucida Grande', 'Trebuchet MS', Verdana, Sans-Serif;
+	font-size: 140%;
+	letter-spacing: -1px;
+	color: #aaa;
+	padding: 3px 8px 4px;
+	background: #f7f7f7;
+	height: 24px;
+}
+
+.nav_tabs li a:hover {
+	background: #f1f1f1;
+	text-decoration: none;
+}
+	 
+.nav_tabs li.active a { 
+	color: #666; 
+	font-weight: bold; 
+	padding-top: 4px; 
+	border-bottom: 0; 
+	background: #efefef; 
+} 
+	 
+.nav_tabs .tab_description { 
+	background: #efefef; 
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+	border-top: 0;
+	font-size: 85%;
+}
+
+.commentbox {
+	padding: 5px;
+	margin: 5px;
+	background: #E5E5E5;
+	border: 1px solid #CCCCCC;
+}
+
+.commentavatar {
+	background: url(images/tracker/bubble.png) no-repeat center top;
+	padding-right: 5px;
+}
+
+.commentmod {
+	padding:5px; 
+	border:1px solid #CCC
+}
+
+.plus_vote {
+	padding:5px;
+	background: #669966;
+	color:#FFFFFF;
+}
+
+.minus_vote {
+	padding:5px;
+	background: #ED918E;
+}
+
+.idea_container {
+	padding:5px;
+	margin:2px;
+	background: #FFFFFF;
+	color:#000000;
+}
+
+.idea_counter {
+	padding:10px;
+	border:1px solid #CCCCCC;
+	float:right;
+	background: #E5E5E5;
+	text-align:center;
+}
+
+/* From http://blog.leetsoft.com */
+div.progress-container {
+	border: 1px solid #ccc; 
+	width: 195px; 
+	margin: 2px 5px 2px 0; 
+	padding: 1px; 
+	float: left; 
+	background: white;
+}
+
+div.progress-container > div {
+	background-color: #ACE97C; 
+	height: 12px
+	font-size: 8px;
+	padding-left:2px;
+}
+
+.act_comment {
+	background: url(images/tracker/comment.png) no-repeat left center;
+	padding-left:20px;
+	min-height:16px;
+}
+
+.act_update {
+	background: url(images/tracker/updated.png) no-repeat left center;
+	padding-left:20px;
+	min-height:16px;
+}
+
+.act_newbug {
+	background: url(images/tracker/issue.png) no-repeat left center;
+	padding-left:20px;
+	min-height:16px;
+}
+
+.act_newfeature {
+	background: url(images/tracker/feature.png) no-repeat left center;
+	padding-left:20px;
+	min-height:16px;
+}
+
+.act_resolved {
+	background: url(images/tracker/resolved.png) no-repeat left center;
+	padding-left:20px;
+	min-height:16px;
+}
+
+input.submit_button {
+	border: 3px double #0F5C8E;
+	padding: 3px;
+	background: #fff url(images/tracker/admin/submit_bg.gif) repeat-x top;
+	color: #0F5C8E;
+	font-weight: bold;
+	margin-right: 3px;
+}]]>
+</stylesheet>
+<stylesheet name="facebox.css" version="1408" myversion="1000"><![CDATA[#facebox .b {
+	background: url(images/tracker/facebox/b.png);
+}
+
+#facebox .tl {
+	background:url(images/tracker/facebox/tl.png);
+}
+
+#facebox .tr {
+	background:url(images/tracker/facebox/tr.png);
+}
+
+#facebox .bl {
+	background:url(images/tracker/facebox/bl.png);
+}
+
+#facebox .br {
+	background:url(images/tracker/facebox/br.png);
+}
+
+#facebox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	text-align: left;
+}
+
+#facebox .scrollcontent {
+	height:500px;
+	overflow:auto;
+}
+
+#facebox .popup {
+	position: relative;
+}
+
+#facebox table {
+  border-collapse: collapse;
+}
+
+#facebox td {
+ 	border-bottom: 0;
+	padding: 0;
+}
+
+#facebox .body {
+	padding: 10px;
+	background: #fff;
+	width: 370px;
+}
+
+#facebox .loading {
+	text-align: center;
+}
+
+#facebox .image {
+	text-align: center;
+}
+
+#facebox img {
+	border: 0;
+	margin: 0;
+}
+
+#facebox .footer {
+	border-top: 1px solid #DDDDDD;
+	padding-top: 5px;
+	margin-top: 10px;
+	text-align: left;
+	font-size: 11px;
+}
+
+#facebox .tl, #facebox .tr, #facebox .bl, #facebox .br {
+	height: 10px;
+	width: 10px;
+	overflow: hidden;
+	padding: 0;
+}
+
+#facebox_overlay {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height:100%;
+	width:100%;
+}
+
+.facebox_hide {
+	z-index:-100;
+}
+
+.facebox_overlayBG {
+	background-color: #000;
+	z-index: 99;
+}
+
+* html #facebox_overlay {
+	/* ie6 hack */
+	position: absolute;
+	height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}]]>
+	</stylesheet>
+</stylesheets>
+<templates>
+	<template name="mytrackercp_categories" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/jquery.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/mytracker.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/facebox.js"></script>
+</head>
+<body>
+{$header}
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td width="20%" valign="top">{$main_menu}</td>
+<td valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">{$messages}
+<form method="post" action="categories.php">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<input type="hidden" name="action" value="save_orders" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td colspan="3" class="thead"><strong>{$lang->allcategories}</strong></td>
+</tr>
+<tr>
+<td class="tcat"><span class="smalltext"><strong>{$lang->category}</strong></span></td>
+<td class="tcat" width="100" align="center"><span class="smalltext"><strong>{$lang->order}</strong></span></td>
+<td class="tcat" width="200"><span class="smalltext"><strong>{$lang->options}</strong></span></td>
+</tr>
+{$category_list}
+</table>
+<br />
+<div style="text-align:center;"><input type="submit" value="{$lang->save_cat_order}" class="submit_button" /> <input type="reset" value="{$lang->reset_order}" class="submit_button" /></div>
+</form>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</td></tr></table>
+
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_categories_categorylist" version="1408" myversion="1000"><![CDATA[<tr>
+<td class="{$bgcolor}"><a href="categories.php?action=edit&amp;category={$category['catid']}"><strong>{$category['name']}</strong></a></td>
+<td class="{$bgcolor}" align="center"><input type="text" name="disporder[{$category['catid']}]" value="{$category['disporder']}" class="textbox" style="width: 50%; text-align:center;" /></td>
+<td class="{$bgcolor}"><a href="categories.php?action=edit&amp;category={$category['catid']}">{$lang->edit}</a>  &middot; <a href="categories.php?action=delete&amp;category={$category['catid']}">{$lang->delete}</a></td>
+</tr>]]>
+	</template>
+	<template name="mytrackercp_categories_delete" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+<form action="categories.php" method="post">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="2"><strong>{$lang->category} - {$category['name']}</strong></td>
+</tr>
+<tr>
+<td class="trow1" colspan="2">{$lang->confirm_delete_category}</td>
+</tr>
+</table>
+<br />
+<div align="center"><input type="submit" class="button" name="submit" value="{$lang->delete_category}" /></div>
+<input type="hidden" name="action" value="do_delete" />
+<input type="hidden" name="category" value="{$category['catid']}" />
+</form>
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_categories_edit" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td width="20%" valign="top">{$main_menu}</td>
+<td valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">{$messages}
+<form method="post" action="categories.php">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<input type="hidden" name="action" value="do_edit" />
+<input type="hidden" name="category" value="{$category['catid']}" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="4"><strong>{$lang->category}: {$category['name']}</strong></td>
+</tr>
+<tr>
+<td colspan="2" class="tcat"><span class="smalltext"><strong>{$lang->options}</strong></span></td>
+<td class="tcat" width="400" colspan="2"><span class="smalltext"><strong>{$lang->info}</strong></span></td>
+</tr>
+<tr>
+	<td width="150" class="trow1"><strong>{$lang->category_name}</strong></td>
+	<td width="250" class="trow1"><input name="name" type="text" class="textbox" value="{$value_1}" style="width:99%" /></td>
+<td colspan="2" rowspan="5" class="trow1" valign="top">{$lang->edit_category_info}</td>
+</tr>
+<tr>
+	<td class="trow2"><strong>{$lang->cat_displayorder}</strong></td>
+	<td class="trow2"><input name="displayorder" type="text" class="textbox" value="{$value_2}" style="width:25%" /></td>
+</tr>
+<tr>
+	<td class="trow2" valign="top"><strong>{$lang->cat_forgroups}</strong></td>
+	<td class="trow2" valign="top">{$group_list}</td>
+</tr>
+</table>
+<br />
+<div style="text-align:center;"><input type="submit" value="{$lang->save_category}" class="submit_button" /></div>
+</form>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</td></tr></table>
+
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_categories_new" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']} &raquo; {$lang->new_category}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td width="20%" valign="top">{$main_menu}</td>
+<td valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">{$messages}
+<form method="post" action="categories.php">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<input type="hidden" name="action" value="do_new" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="4"><strong>{$lang->categories}: {$lang->new_category}</strong></td>
+</tr>
+<tr>
+<td colspan="2" class="tcat"><span class="smalltext"><strong>{$lang->options}</strong></span></td>
+<td class="tcat" width="400" colspan="2"><span class="smalltext"><strong>{$lang->info}</strong></span></td>
+</tr>
+<tr>
+	<td width="150" class="trow1"><strong>{$lang->category_name}</strong></td>
+	<td width="250" class="trow1"><input name="name" type="text" class="textbox" value="{$value_1}" style="width:99%" /></td>
+<td colspan="2" rowspan="5" class="trow1" valign="top">{$lang->category_info}</td>
+</tr>
+<tr>
+	<td class="trow2"><strong>{$lang->cat_displayorder}</strong></td>
+	<td class="trow2"><input name="displayorder" type="text" class="textbox" value="{$value_2}" style="width:25%" /></td>
+</tr>
+<tr>
+	<td class="trow2" valign="top"><strong>{$lang->cat_forgroups}</strong></td>
+	<td class="trow2" valign="top">{$group_list}</td>
+</tr>
+</table>
+<br />
+<div style="text-align:center;"><input type="submit" value="{$lang->create_category}" class="submit_button" /></div>
+</form>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</td></tr></table>
+
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_index" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/jquery.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/mytracker.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/facebox.js"></script>
+</head>
+<body>
+{$header}
+<script type="text/javascript">
+<!--
+	jQuery.get("connect.php", function(data){
+		jQuery("#latestnews").replaceWith("<div class='margin_left' id='latestnews'>" + data + "</div>");
+	});
+// -->
+</script>
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td width="20%" valign="top">{$main_menu}</td>
+<td valign="top">
+<div class="border_wrapper">
+<div class="title">{$lang->trackercp}</div>
+<table cellspacing="0" class="general">
+<tr class="first">
+	<td class="first" width="25%"><strong>{$lang->trackerversion}</strong></td>
+	<td class="alt_col" width="25%">{$user_version['version']} ({$user_version['version_code']})</td>
+	<td width="25%"><strong>{$lang->issues}</strong></td>
+	<td class="last alt_col" width="25%"><strong>{$number_issues}</strong> {$lang->issues}<br />{$lang->issues_new_today}</td>
+</tr>
+<tr class="alt_row">
+	<td colspan="2" rowspan="2" class="first">{$version_text}
+	<div><strong>Latest News</strong><div class="margin_left" id="latestnews">{$xekko_news}</div></div></td>
+	<td width="25%"><strong>{$lang->features}</strong></td>
+	<td class="last alt_col" width="25%"><strong>{$number_ideas}</strong> {$lang->ideas}<br />{$lang->ideas_new_today}</td>
+</tr>
+<tr class="last">
+	<td width="25%"><strong>{$lang->comments}</strong></td>
+	<td class="last alt_col" width="25%"><strong>{$number_comments}</strong> {$lang->comments}<br />{$lang->comments_new_today}</td>
+</tr>
+</table>
+</div>
+</td></tr></table>
+</td></tr></table>
+
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_mainmenu" version="1408" myversion="1000"><![CDATA[<div id="left_menu">
+<div class="left_menu_box">
+	<div class="title">{$lang->main_menu}</div>
+	<ul class="tracker_menu">
+		<li class="{$home_active}"><a href="./">{$h_raquo} {$lang->cp_home}</a></li>
+		<li class="{$projects_active}"><a href="./projects.php">{$p_raquo} {$lang->menu_projects}</a></li>{$project_options}
+		<li class="{$cat_active}"><a href="./categories.php">{$ca_raquo} {$lang->menu_categories}</a></li>{$category_options}
+		<li class="{$pri_active}"><a href="./priorities.php">{$pr_raquo} {$lang->menu_priorities}</a></li>{$priority_options}
+		<li class="{$sta_active}"><a href="./statuses.php">{$st_raquo} {$lang->menu_statuses}</a></li>{$status_options}
+		<li class="{$stag_active}"><a href="./stages.php">{$sg_raquo} {$lang->menu_stages}</a></li>{$stage_options}
+	</ul>
+</div>
+<br />
+<div class="left_menu_box">
+	<div class="title">{$lang->menu_options}</div>
+	<ul class="tracker_menu">
+		<li ><a href="./?action=checkversion">{$lang->menu_updates}</a></li>
+		<li ><a href="http://xekko.co.uk/mytracker/" target="_blank">{$lang->menu_trackhome}</a></li>
+	</ul>
+</div>
+</div>]]>
+	</template>
+	<template name="mytrackercp_priorities" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td width="20%" valign="top">{$main_menu}</td>
+<td valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">{$messages}
+<form method="post" action="priorities.php">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<input type="hidden" name="action" value="save_orders" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td colspan="3" class="thead"><strong>{$lang->allpriorities}</strong></td>
+</tr>
+<tr>
+<td class="tcat"><span class="smalltext"><strong>{$lang->priority}</strong></span></td>
+<td class="tcat" width="100" align="center"><span class="smalltext"><strong>{$lang->order}</strong></span></td>
+<td class="tcat" width="200"><span class="smalltext"><strong>{$lang->options}</strong></span></td>
+</tr>
+{$priority_list}
+</table>
+<br />
+<div style="text-align:center;"><input type="submit" value="{$lang->save_pri_order}" class="submit_button" /> <input type="reset" value="{$lang->reset_order}" class="submit_button" /></div>
+</form>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</td></tr></table>
+
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_priorities_delete" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+<form action="priorities.php" method="post">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="2"><strong>{$lang->priority} - {$priority['name']}</strong></td>
+</tr>
+<tr>
+<td class="trow1" colspan="2">{$lang->confirm_delete_priority}</td>
+</tr>
+</table>
+<br />
+<div align="center"><input type="submit" class="button" name="submit" value="{$lang->delete_priority}" /></div>
+<input type="hidden" name="action" value="do_delete" />
+<input type="hidden" name="priority" value="{$priority['priorid']}" />
+</form>
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_priorities_edit" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td width="20%" valign="top">{$main_menu}</td>
+<td valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">{$messages}
+<form method="post" action="priorities.php">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<input type="hidden" name="action" value="do_edit" />
+<input type="hidden" name="priority" value="{$priority['priorid']}" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="3"><strong>{$lang->priority}: {$priority['name']}</strong></td>
+</tr>
+<tr>
+<td colspan="2" class="tcat"><span class="smalltext"><strong>{$lang->options}</strong></span></td>
+<td class="tcat" width="400" colspan="2"><span class="smalltext"><strong>{$lang->info}</strong></span></td>
+</tr>
+<tr>
+	<td width="150" class="trow1"><strong>{$lang->priority_name}</strong></td>
+	<td width="250" class="trow1"><input name="name" type="text" class="textbox" value="{$value_1}" style="width:99%" /></td>
+<td colspan="2" rowspan="5" class="trow1" valign="top">{$lang->edit_priority_info}</td>
+</tr>
+<tr>
+	<td class="trow2"><strong>{$lang->pri_displayorder}</strong></td>
+	<td class="trow2"><input name="displayorder" type="text" class="textbox" value="{$value_2}" style="width:25%" /></td>
+</tr>
+<tr>
+	<td class="trow2" valign="top"><strong>{$lang->priority_style}</strong></td>
+	<td class="trow2"><textarea name="style" cols="1" rows="5" style="width:99%">{$value_3}</textarea></td>
+</tr>
+<tr>
+	<td class="trow2" valign="top"><strong>{$lang->pri_forgroups}</strong></td>
+	<td class="trow2" valign="top">{$group_list}</td>
+</tr>
+</table>
+<br />
+<div style="text-align:center;"><input type="submit" value="{$lang->save_priority}" class="submit_button" /></div>
+</form>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</td></tr></table>
+
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_priorities_new" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']} &raquo; {$lang->new_priority}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td width="20%" valign="top">{$main_menu}</td>
+<td valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">{$messages}
+<form method="post" action="priorities.php">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<input type="hidden" name="action" value="do_new" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="4"><strong>{$lang->priorities}: {$lang->new_priority}</strong></td>
+</tr>
+<tr>
+<td colspan="2" class="tcat"><span class="smalltext"><strong>{$lang->options}</strong></span></td>
+<td class="tcat" width="400" colspan="2"><span class="smalltext"><strong>{$lang->info}</strong></span></td>
+</tr>
+<tr>
+	<td width="150" class="trow1"><strong>{$lang->priority_name}</strong></td>
+	<td width="250" class="trow1"><input name="name" type="text" class="textbox" value="{$value_1}" style="width:99%" /></td>
+<td colspan="2" rowspan="5" class="trow1" valign="top">{$lang->priority_info}</td>
+</tr>
+<tr>
+	<td class="trow2"><strong>{$lang->pri_displayorder}</strong></td>
+	<td class="trow2"><input name="displayorder" type="text" class="textbox" value="{$value_2}" style="width:25%" /></td>
+</tr>
+<tr>
+	<td class="trow2" valign="top"><strong>{$lang->priority_style}</strong></td>
+	<td class="trow2"><textarea name="style" cols="1" rows="5" style="width:99%">{$value_3}</textarea></td>
+</tr>
+<tr>
+	<td class="trow2" valign="top"><strong>{$lang->pri_forgroups}</strong></td>
+	<td class="trow2" valign="top">{$group_list}</td>
+</tr>
+</table>
+<br />
+<div style="text-align:center;"><input type="submit" value="{$lang->create_priority}" class="submit_button" /></div>
+</form>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</td></tr></table>
+
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_priorities_prioritylist" version="1408" myversion="1000"><![CDATA[<tr>
+<td class="{$bgcolor}"><a href="priorities.php?action=edit&amp;priority={$priority['priorid']}"><strong>{$priority['name']}</strong></a></td>
+<td class="{$bgcolor}" align="center"><input type="text" name="disporder[{$priority['priorid']}]" value="{$priority['disporder']}" class="textbox" style="width: 50%; text-align:center;" /></td>
+<td class="{$bgcolor}"><a href="priorities.php?action=edit&amp;priority={$priority['priorid']}">{$lang->edit}</a>{$delete_link}</td>
+</tr>]]>
+	</template>
+	<template name="mytrackercp_projects_delete" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+<form action="projects.php" method="post">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="2"><strong>{$project['name']} - {$lang->delete_project}</strong></td>
+</tr>
+<tr>
+<td class="trow1" colspan="2">{$lang->confirm_delete_projects}</td>
+</tr>
+</table>
+<br />
+<div align="center"><input type="submit" class="button" name="submit" value="{$lang->delete_project}" /></div>
+<input type="hidden" name="action" value="do_delete" />
+<input type="hidden" name="project" value="{$project['proid']}" />
+</form>
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_projects_edit" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td width="20%" valign="top">{$main_menu}</td>
+<td valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">{$messages}
+<form method="post" action="projects.php">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<input type="hidden" name="action" value="do_edit" />
+<input type="hidden" name="project" value="{$project['proid']}" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="3"><strong>{$lang->project}: {$project['name']}</strong></td>
+</tr>
+<tr>
+<td class="tcat"><span class="smalltext"><strong>{$lang->stats}</strong></span></td>
+<td class="tcat" width="400" colspan="2"><span class="smalltext"><strong>{$lang->options}</strong></span></td>
+</tr>
+<tr>
+<td rowspan="5" valign="top" class="trow1">{$lang->stats_info_1}{$lang->stats_info_2} {$lang->stats_info_3}
+<br /><br />{$lang->stats_info_4}</td>
+<td width="150" class="trow1"><strong>{$lang->project_name}</strong></td>
+<td width="250" class="trow1"><input name="name" type="text" class="textbox" value="{$value_1}" style="width:99%" /></td>
+</tr>
+<tr>
+	<td class="trow2"><strong>{$lang->description}</strong></td>
+	<td class="trow2"><input name="description" type="text" class="textbox" value="{$value_2}" style="width:99%" /></td>
+</tr>
+<tr>
+	<td class="trow1"><strong>{$lang->stage}</strong></td>
+	<td class="trow1">{$project_stages}</td>
+</tr>
+<tr>
+	<td class="trow2"><strong>{$lang->project_active}*</strong></td>
+	<td class="trow2"><label for="active_yes" class="label_radio_yes"><input type="radio" name="active" value="1" class="radio_input radio_yes" id="active_yes" {$value_3} />{$lang->yes}</label> <label for="active_no" class="label_radio_no"><input type="radio" name="active" value="0" class="radio_input radio_no" id="active_no" {$value_4} />{$lang->no}</label></td>
+</tr>
+<tr>
+	<td class="trow1"><strong>{$lang->allow_features}</strong></td>
+	<td class="trow1"><label for="feat_yes" class="label_radio_yes"><input type="radio" name="features" value="1" class="radio_input radio_yes" id="feat_yes" {$value_5} />{$lang->yes}</label> <label for="feat_no" class="label_radio_no"><input type="radio" name="features" value="0" class="radio_input radio_no" id="feat_no" {$value_6} />{$lang->no}</label></td>
+</tr>
+</table>
+<br />
+<div style="text-align:center;"><input type="submit" value="{$lang->save_project}" class="submit_button" /></div>
+</form>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</td></tr></table>
+
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_projects_index" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td width="20%" valign="top">{$main_menu}</td>
+<td valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">{$messages}
+<form method="post" action="projects.php">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<input type="hidden" name="action" value="save_orders" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td colspan="3" class="thead"><strong>{$lang->allprojects}</strong></td>
+</tr>
+<tr>
+<td class="tcat"><span class="smalltext"><strong>{$lang->projects}</strong></span></td>
+<td class="tcat" width="100" align="center"><span class="smalltext"><strong>{$lang->order}</strong></span></td>
+<td class="tcat" width="200"><span class="smalltext"><strong>{$lang->options}</strong></span></td>
+</tr>
+{$project_list}
+</table>
+<br />
+<div style="text-align:center;"><input type="submit" value="{$lang->save_order}" class="submit_button" /> <input type="reset" value="{$lang->reset_order}" class="submit_button" /></div>
+</form>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</td></tr></table>
+
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_projects_managedevs" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td width="20%" valign="top">{$main_menu}</td>
+<td valign="top">{$messages}
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td valign="top" valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="3"><strong>{$lang->manage_groups}</strong></td>
+</tr>
+<tr>
+<td class="tcat"><strong>{$lang->group_name}</strong></td>
+<td class="tcat" colspan="2" width="125" align="center"><strong>{$lang->can_mod}</strong></td>
+</tr>
+{$group_list}
+</table>
+</td>
+<td width="50%" valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="3"><strong>{$lang->manage_devs}</strong></td>
+</tr>
+<tr>
+<td class="tcat"><strong>{$lang->dev_username}</strong></td>
+<td class="tcat" colspan="2" width="125" align="center"><strong>{$lang->options}</strong></td>
+</tr>
+{$developer_list}
+</table>
+<br />
+<form method="post" action="projects.php?action=managedevs&amp;do=adddev">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="2"><strong>{$lang->add_a_dev}</strong></td>
+</tr>
+<tr>
+<td class="trow1" width="30%"><strong>{$lang->username}</strong></td>
+<td class="trow1">
+<input type="text" name="username" value="" class="textbox" id="username" style="width:99%;" /></td>
+</td>
+</tr>
+</table>
+<br />
+<script type="text/javascript" src="../../jscripts/autocomplete.js?ver=140"></script>
+<script type="text/javascript">
+<!--
+	new autoComplete("username", "../../xmlhttp.php?action=get_users", {valueSpan: "username"});
+// -->
+</script>
+<div align="center"><input type="submit" value="{$lang->add_dev}" class="submit_button" /></div>
+</form>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</td></tr></table>
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_projects_new" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']} &raquo; {$lang->new_project}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td width="20%" valign="top">{$main_menu}</td>
+<td valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">{$messages}
+<form method="post" action="projects.php">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<input type="hidden" name="action" value="do_new" />
+<input type="hidden" name="project" value="{$project['proid']}" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="4"><strong>{$lang->project}: {$lang->new_project}</strong></td>
+</tr>
+<tr>
+<td colspan="2" class="tcat"><span class="smalltext"><strong>{$lang->options}</strong></span></td>
+<td class="tcat" width="400" colspan="2"><span class="smalltext"><strong>{$lang->info}</strong></span></td>
+</tr>
+<tr>
+	<td width="150" class="trow1"><strong>{$lang->project_name}</strong></td>
+	<td width="250" class="trow1"><input name="name" type="text" class="textbox" value="{$value_1}" style="width:99%" /></td>
+<td colspan="2" rowspan="5" class="trow1" valign="top">{$lang->new_info}</td>
+</tr>
+<tr>
+	<td class="trow2"><strong>{$lang->description}</strong></td>
+	<td class="trow2"><input name="description" type="text" class="textbox" value="{$value_2}" style="width:99%" /></td>
+	</tr>
+<tr>
+	<td class="trow1"><strong>{$lang->stage}</strong></td>
+	<td class="trow1">{$project_stages}</td>
+	</tr>
+<tr>
+	<td class="trow2"><strong>{$lang->project_active}*</strong></td>
+	<td class="trow2"><label for="active_yes" class="label_radio_yes">
+		<input type="radio" name="active" value="1" class="radio_input radio_yes" id="active_yes" {$value_3} />
+		{$lang->yes}</label>
+			<label for="active_no" class="label_radio_no">
+				<input type="radio" name="active" value="0" class="radio_input radio_no" id="active_no" {$value_4} />
+				{$lang->no}</label></td>
+	</tr>
+<tr>
+	<td class="trow1" valign="top"><strong>{$lang->allow_features}</strong></td>
+	<td class="trow1" valign="top"><label for="feat_yes" class="label_radio_yes">
+		<input type="radio" name="features" value="1" class="radio_input radio_yes" id="feat_yes" {$value_5} />
+		{$lang->yes}</label>
+			<label for="feat_no" class="label_radio_no">
+				<input type="radio" name="features" value="0" class="radio_input radio_no" id="feat_no" {$value_6} />
+				{$lang->no}</label></td>
+	</tr>
+</table>
+<br />
+<div style="text-align:center;"><input type="submit" value="{$lang->create_project}" class="submit_button" /></div>
+</form>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</td></tr></table>
+
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_projects_projectlist" version="1408" myversion="1000"><![CDATA[<tr>
+<td class="{$bgcolor}"><a href="projects.php?action=edit&amp;project={$project['proid']}"><strong>{$project['name']}</strong></a>
+<br />
+<span class="smalltext">{$project['description']}</span></td>
+<td class="{$bgcolor}" align="center"><input type="text" name="disporder[{$project['proid']}]" value="{$project['disporder']}" class="textbox" style="width: 50%; text-align:center;" /></td>
+<td class="{$bgcolor}"><a href="{$project_link}">{$lang->goto}</a> &middot; <a href="projects.php?action=edit&amp;project={$project['proid']}">{$lang->edit}</a> &middot; <a href="projects.php?action=delete&amp;project={$project['proid']}">{$lang->delete}</a></td>
+</tr>]]>
+	</template>
+	<template name="mytrackercp_stages" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td width="20%" valign="top">{$main_menu}</td>
+<td valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">{$messages}
+<form method="post" action="stages.php">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<input type="hidden" name="action" value="save_orders" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td colspan="3" class="thead"><strong>{$lang->allstages}</strong></td>
+</tr>
+<tr>
+<td class="tcat"><span class="smalltext"><strong>{$lang->stage}</strong></span></td>
+<td class="tcat" width="100" align="center"><span class="smalltext"><strong>{$lang->order}</strong></span></td>
+<td class="tcat" width="200"><span class="smalltext"><strong>{$lang->options}</strong></span></td>
+</tr>
+{$stage_list}
+</table>
+<br />
+<div style="text-align:center;"><input type="submit" value="{$lang->save_stage_order}" class="submit_button" /> <input type="reset" value="{$lang->reset_order}" class="submit_button" /></div>
+</form>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</td></tr></table>
+
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_stages_delete" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+<form action="stages.php" method="post">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="2"><strong>{$lang->stage} - {$stage['name']}</strong></td>
+</tr>
+<tr>
+<td class="trow1" colspan="2">{$lang->confirm_delete_stage}</td>
+</tr>
+</table>
+<br />
+<div align="center"><input type="submit" class="submit_button" name="submit" value="{$lang->delete_stage}" /></div>
+<input type="hidden" name="action" value="do_delete" />
+<input type="hidden" name="stage" value="{$stage['stageid']}" />
+</form>
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_stages_edit" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td width="20%" valign="top">{$main_menu}</td>
+<td valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">{$messages}
+<form method="post" action="stages.php">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<input type="hidden" name="action" value="do_edit" />
+<input type="hidden" name="stage" value="{$stage['stageid']}" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="3"><strong>{$lang->stage}: {$stage['name']}</strong></td>
+</tr>
+<tr>
+<td colspan="2" class="tcat"><span class="smalltext"><strong>{$lang->options}</strong></span></td>
+<td class="tcat" width="400" colspan="2"><span class="smalltext"><strong>{$lang->info}</strong></span></td>
+</tr>
+<tr>
+	<td width="150" class="trow1"><strong>{$lang->stage_name}</strong></td>
+	<td width="250" class="trow1"><input name="name" type="text" class="textbox" value="{$value_1}" style="width:99%" /></td>
+<td colspan="2" rowspan="5" class="trow1" valign="top">{$lang->stage_info}</td>
+</tr>
+<tr>
+	<td class="trow2" valign="top"><strong>{$lang->stg_displayorder}</strong></td>
+	<td class="trow2" valign="top"><input name="displayorder" type="text" class="textbox" value="{$value_2}" style="width:25%" /></td>
+</tr>
+</table>
+<br />
+<div style="text-align:center;"><input type="submit" value="{$lang->save_stage}" class="submit_button" /></div>
+</form>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</td></tr></table>
+
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_stages_new" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']} &raquo; {$lang->new_stage}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td width="20%" valign="top">{$main_menu}</td>
+<td valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">{$messages}
+<form method="post" action="stages.php">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<input type="hidden" name="action" value="do_new" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="4"><strong>{$lang->stages}: {$lang->new_stage}</strong></td>
+</tr>
+<tr>
+<td colspan="2" class="tcat"><span class="smalltext"><strong>{$lang->options}</strong></span></td>
+<td class="tcat" width="400" colspan="2"><span class="smalltext"><strong>{$lang->info}</strong></span></td>
+</tr>
+<tr>
+	<td width="150" class="trow1"><strong>{$lang->stage_name}</strong></td>
+	<td width="250" class="trow1"><input name="name" type="text" class="textbox" value="{$value_1}" style="width:99%" /></td>
+<td colspan="2" rowspan="5" class="trow1" valign="top">{$lang->stage_info}</td>
+</tr>
+<tr>
+	<td class="trow2" valign="top"><strong>{$lang->stg_displayorder}</strong></td>
+	<td class="trow2" valign="top"><input name="displayorder" type="text" class="textbox" value="{$value_2}" style="width:25%" /></td>
+</tr>
+</table>
+<br />
+<div style="text-align:center;"><input type="submit" value="{$lang->create_stage}" class="submit_button" /></div>
+</form>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</td></tr></table>
+
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_stages_stagelist" version="1408" myversion="1000"><![CDATA[<tr>
+<td class="{$bgcolor}"><a href="stages.php?action=edit&amp;stage={$stage['stageid']}"><strong>{$stage['name']}</strong></a></td>
+<td class="{$bgcolor}" align="center"><input type="text" name="disporder[{$stage['stageid']}]" value="{$stage['disporder']}" class="textbox" style="width: 50%; text-align:center;" /></td>
+<td class="{$bgcolor}"><a href="stages.php?action=edit&amp;stage={$stage['stageid']}">{$lang->edit}</a>{$delete_link}</td>
+</tr>]]>
+	</template>
+	<template name="mytrackercp_statuses" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td width="20%" valign="top">{$main_menu}</td>
+<td valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">{$messages}
+<form method="post" action="statuses.php">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<input type="hidden" name="action" value="save_orders" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td colspan="3" class="thead"><strong>{$lang->allstatuses}</strong></td>
+</tr>
+<tr>
+<td class="tcat"><span class="smalltext"><strong>{$lang->status}</strong></span></td>
+<td class="tcat" width="100" align="center"><span class="smalltext"><strong>{$lang->order}</strong></span></td>
+<td class="tcat" width="200"><span class="smalltext"><strong>{$lang->options}</strong></span></td>
+</tr>
+{$status_list}
+</table>
+<br />
+<div style="text-align:center;"><input type="submit" value="{$lang->save_status_order}" class="submit_button" /> <input type="reset" value="{$lang->reset_order}" class="submit_button" /></div>
+</form>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</td></tr></table>
+
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_statuses_delete" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+<form action="statuses.php" method="post">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="2"><strong>{$lang->status} - {$status['name']}</strong></td>
+</tr>
+<tr>
+<td class="trow1" colspan="2">{$lang->confirm_delete_status}</td>
+</tr>
+</table>
+<br />
+<div align="center"><input type="submit" class="submit_button" name="submit" value="{$lang->delete_status}" /></div>
+<input type="hidden" name="action" value="do_delete" />
+<input type="hidden" name="status" value="{$status['statid']}" />
+</form>
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_statuses_edit" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td width="20%" valign="top">{$main_menu}</td>
+<td valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">{$messages}
+<form method="post" action="statuses.php">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<input type="hidden" name="action" value="do_edit" />
+<input type="hidden" name="status" value="{$status['statid']}" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="3"><strong>{$lang->status}: {$status['name']}</strong></td>
+</tr>
+<tr>
+<td colspan="2" class="tcat"><span class="smalltext"><strong>{$lang->options}</strong></span></td>
+<td class="tcat" width="400" colspan="2"><span class="smalltext"><strong>{$lang->info}</strong></span></td>
+</tr>
+<tr>
+	<td width="150" class="trow1"><strong>{$lang->status_name}</strong></td>
+	<td width="250" class="trow1"><input name="name" type="text" class="textbox" value="{$value_1}" style="width:99%" /></td>
+<td colspan="2" rowspan="5" class="trow1" valign="top">{$lang->edit_status_info}</td>
+</tr>
+<tr>
+	<td class="trow2"><strong>{$lang->sta_displayorder}</strong></td>
+	<td class="trow2"><input name="displayorder" type="text" class="textbox" value="{$value_2}" style="width:25%" /></td>
+</tr>
+<tr>
+	<td class="trow1" valign="top"><strong>{$lang->sta_forgroups}</strong></td>
+	<td class="trow1" valign="top">{$group_list}</td>
+</tr>
+</table>
+<br />
+<div style="text-align:center;"><input type="submit" value="{$lang->save_status}" class="submit_button" /></div>
+</form>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</td></tr></table>
+
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_statuses_new" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']} &raquo; {$lang->new_status}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td width="20%" valign="top">{$main_menu}</td>
+<td valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">{$messages}
+<form method="post" action="statuses.php">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<input type="hidden" name="action" value="do_new" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="4"><strong>{$lang->statuses}: {$lang->new_status}</strong></td>
+</tr>
+<tr>
+<td colspan="2" class="tcat"><span class="smalltext"><strong>{$lang->options}</strong></span></td>
+<td class="tcat" width="400" colspan="2"><span class="smalltext"><strong>{$lang->info}</strong></span></td>
+</tr>
+<tr>
+	<td width="150" class="trow1"><strong>{$lang->status_name}</strong></td>
+	<td width="250" class="trow1"><input name="name" type="text" class="textbox" value="{$value_1}" style="width:99%" /></td>
+<td colspan="2" rowspan="5" class="trow1" valign="top">{$lang->status_info}</td>
+</tr>
+<tr>
+	<td class="trow2"><strong>{$lang->sta_displayorder}</strong></td>
+	<td class="trow2"><input name="displayorder" type="text" class="textbox" value="{$value_2}" style="width:25%" /></td>
+</tr>
+<tr>
+	<td class="trow2" valign="top"><strong>{$lang->sta_forgroups}</strong></td>
+	<td class="trow2" valign="top">{$group_list}</td>
+</tr>
+</table>
+<br />
+<div style="text-align:center;"><input type="submit" value="{$lang->create_status}" class="submit_button" /></div>
+</form>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</td></tr></table>
+
+{$footer}
+</body>
+</html>]]>
+	</template>
+	<template name="mytrackercp_statuses_statuslist" version="1408" myversion="1000"><![CDATA[<tr>
+<td class="{$bgcolor}"><a href="statuses.php?action=edit&amp;status={$status['statid']}"><strong>{$status['name']}</strong></a></td>
+<td class="{$bgcolor}" align="center"><input type="text" name="disporder[{$status['statid']}]" value="{$status['disporder']}" class="textbox" style="width: 50%; text-align:center;" /></td>
+<td class="{$bgcolor}"><a href="statuses.php?action=edit&amp;status={$status['statid']}">{$lang->edit}</a>{$delete_link}</td>
+</tr>]]>
+	</template>
+<template name="mytracker_newidea" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/post.js?ver=1400"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/jquery.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/mytracker.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/facebox.js"></script>
+</head>
+<body>
+{$header}
+<div id="body">
+{$content}
+</div>
+{$footer}
+</body>
+</html>]]></template>
+		<template name="mytracker_newidea_content" version="1408" myversion="1000"><![CDATA[<form name="new" method="post" action="{$form_url}">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}"  width="100%"{$issue['visiblestyle']}>
+{$menu}
+{$errors}
+<td width="40%" valign="top"><table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="2" valign="top"><strong>{$lang->iss_info}</strong></td>
+</tr>
+<tr>
+<td class="trow1" width="35%" valign="top"><strong>{$lang->iss_subject}</strong></td>
+<td class="trow1"><input name="subject" type="text" class="textbox" value="{$mybb->input['subject']}" size="1" maxlength="85" style="width:99%" /></td>
+</tr>
+<tr>
+<td class="trow1" valign="top"><strong>{$lang->iss_project}</strong></td>
+<td class="trow1">{$projects}</td>
+</tr>
+</table></td>
+<td width="60%" valign="top">
+<div><div class="float_right smalltext" style="padding:2px;" id="clicksmilies"><br /></div><strong>{$lang->iss_message}</strong><br /><span class="smalltext">{$lang->fea_new_desc}</span></div>
+<br />
+<textarea name="message" id="message" cols="1" rows="10" class="textarea" style="width:99%;">{$mybb->input['message']}</textarea>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/editor.js?ver=1400"></script>
+{$codebuttons}
+<br class="clear" />
+<noscript><br /></noscript>
+<div align="center">
+<input name="save" type="submit" value="{$lang->fea_post}" class="button" /> <a href="{$back_url}"><input name="cancel" type="button" value="{$lang->cancel_button}" class="button" /></a></div></td>
+</tr>
+</table>
+</form>]]></template>
+		<template name="mytracker_feature_commentinedit" version="1408" myversion="1000"><![CDATA[<div id="comment{$comment['featpid']}"{$comment_class}>
+<a name="comm{$comment['featpid']}" id="comm{$comment['featpid']}"></a>
+<form method="post" action="features.php?feature={$comment['featid']}">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="65" rowspan="2" align="center" class="commentavatar" valign="top">{$avatar}</td>
+		<td valign="top"><div class="float_right smalltext">{$comment['posted']}{$mod_actions}</div><a href="{$comment['authorlink']}"><strong>{$comment['author']}</strong></a> said...</td>
+	</tr>
+	<tr>
+		<td valign="top"><div class="commentbox"><textarea name="comment" id="comment" cols="1" rows="5" style="width:99%">{$comment['message']}</textarea></div></td>
+	</tr>
+	<tr>
+		<td valign="top" colspan="2"><div align="right"><input name="makecomm" type="submit" value="{$lang->ed_update_comment}" class="button" /></div></td>
+	</tr>
+</table>
+<input name="action" type="hidden" value="edit_comment" /><input name="pid" type="hidden" value="{$comment['featpid']}" /><input name="all" type="hidden" value="1" />
+</form>
+</div>]]></template>
+		<template name="mytracker_feature_editcomment" version="1408" myversion="1000"><![CDATA[<form method="post" action="features.php?feature={$comment['featid']}"><div id="e_comment"><img src="../images/tracker/user_comment.png" alt="" style="vertical-align:middle" /> <strong>{$lang->ed_edit_a_comment}</strong>
+<br /><span class="smalltext" style="padding-left:20px;"><em>{$lang->ed_edit_comment}</em></span><br /><br />
+<div style="padding-left:20px; text-align:center;"><textarea name="comment" id="comment" cols="50" rows="5">{$comment['message']}</textarea><br /><br /><input name="makecomm" type="submit" value="{$lang->ed_update_comment}" class="button" /><input name="action" type="hidden" value="edit_comment" /><input name="pid" type="hidden" value="{$comment['featpid']}" />{$all}</div>
+</div></form>]]></template>
+		<template name="mytracker_feature_comments" version="1408" myversion="1000"><![CDATA[<div id="comment{$comment['featpid']}"{$comment_class}>
+<a name="comm{$comment['featpid']}" id="comm{$comment['featpid']}"></a>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="65" rowspan="2" align="center" class="commentavatar" valign="top">{$avatar}</td>
+		<td valign="top"><div class="float_right smalltext">{$comment['posted']}{$mod_actions}</div><a href="{$comment['authorlink']}"><strong>{$comment['author']}</strong></a> said...</td>
+	</tr>
+	<tr>
+		<td valign="top"><div class="commentbox"><span class="smalltext">{$comment['comment']}{$edit_details}</span></div></td>
+	</tr>
+</table>
+</div>]]></template>
+		<template name="mytracker_feature_voting" version="1408" myversion="1000"><![CDATA[<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr><td align="right" width="25%">Popularity:</td>
+<td width="5"></td>
+<td><div class="progress-container"><div style="width: {$feature['percentbar']}%;">&nbsp;{$feature['percent']}%</div></div>
+</div>
+</td></tr>
+<tr><td colspan="3" height="5"></td></tr>
+<tr><td colspan="3">{$lang->fea_popular_info}</td></tr>
+<tr><td colspan="3" height="5"></td></tr>
+<tr><td colspan="3">{$lang->fea_vote}</td></tr>
+<tr><td colspan="3" height="10"></td></tr>
+{$option_for}
+{$option_against}
+{$option_both}
+{$option_remove}
+</table>]]></template>
+		<template name="mytracker_feature_comments_delete" version="1408" myversion="1000"><![CDATA[Are you sure you want to delete this comment?
+<div align="center"><br />
+<form method="post" action="features.php?feature={$feature['featid']}&amp;action=delete_comment&amp;pid={$pid}">
+<input name="ydelete" type="submit" value="Yes" />&nbsp;&nbsp;<input name="ndelete" type="button" value="No" onclick="jQuery(document).trigger('close.facebox');" />
+</form></div>]]></template>
+		<template name="mytracker_feature_newcomment" version="1408" myversion="1000"><![CDATA[<form method="post" action="features.php?feature={$feature['featid']}"><div id="n_comment"><img src="../images/tracker/user_comment.png" alt="" style="vertical-align:middle" /> <strong>{$lang->iss_newcomment}</strong>
+<br /><span class="smalltext" style="padding-left:20px;"><em>Enter your comment into the box below:</em></span><br /><br />
+<div style="padding-left:20px; text-align:center;"><textarea name="comment" id="comment" cols="50" rows="5"></textarea><br /><br /><input name="makecomm" type="submit" value="Add Comment" class="button" /><input name="action" type="hidden" value="new_comment" /></div>
+</div></form>]]></template>
+		<template name="mytracker_feature_content" version="1408" myversion="1000"><![CDATA[<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" width="100%"{$feature['visiblestyle']}>
+{$menu}
+<td colspan="2">{$feature_buttons}
+<span class="largetext">#{$feature['featid']} &raquo; {$feature['subject']}</span><br />
+<span style="padding-left:15px;" class="smalltext">&raquo; {$lang->fea_reported} {$feature['reportedby']} | {$feature['reported']}{$edited_by}</span></td></tr>
+<tr><td width="40%" rowspan="2" valign="top">
+<img src="../images/tracker/feature.png" alt="" style="vertical-align:middle" /> <strong>{$lang->fea_idea}</strong><div style="margin-top:5px; margin-bottom:10px; padding:5px; border:1px solid #CCCCCC; background-color:#EFEFEF;">{$feature['message']}</div>
+<br />
+{$feature_voting}
+</td>
+	<td valign="top"><img src="../images/tracker/comments.png" alt="" style="vertical-align:middle" /> <strong>{$lang->iss_comments}</strong>
+{$feature_comments}
+<div align="right" class="smalltext"><br />{$feature['comments']} {$lang->iss_p_comments}{$more_comments}{$leave_comments}</div></td>
+</tr>
+</table>]]></template>
+		<template name="mytracker_project_features_content" version="1408" myversion="1001"><![CDATA[<tr {$feature['style']}>
+<td width="1"><img src="{$mybb->settings['bburl']}/{$theme['imgdir']}/{$folder}.gif" alt="{$folder_label}" title="{$folder_label}" /></td>
+<td valign="top"><a href="{$feature['link']}"{$new_class}>{$feature['subject']}</a>
+<br /><span class="smalltext">{$feature['author']}</span></td>
+<td style="white-space: nowrap" valign="top"><span class="smalltext">{$feature['lastpostinfo']}</span></td>
+</tr>]]></template>
+		<template name="mytracker_feature" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$project['name']} &raquo; {$lang->dash_lower_issue} {$issue['issid']}</title>
+{$headerinclude}
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/jquery.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/mytracker.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/facebox.js"></script>
+</head>
+<body>
+{$header}
+<div id="body">
+{$content}
+</div>
+{$footer}
+</body>
+</html>]]></template>
+		<template name="mytracker_issue_all_row" version="1408" myversion="1000"><![CDATA[<tr>
+<td class="{$bgcolor}" width="1"><img src="{$mybb->settings['bburl']}/{$theme['imgdir']}/{$folder}.gif" alt="{$folder_label}" title="{$folder_label}" /></td>
+<td class="{$bgcolor}"{$new_class}><a href="{$issue['url']}">{$issue['subject']}</a>
+<br /><span class="smalltext">{$issue['author']} &raquo; {$lang->iss_priority}: {$issue['priority']}</span></td>
+<td class="{$bgcolor}">{$issue['project']}
+<br /><span class="smalltext"><em>{$issue['status']}</em></span></td>
+<td class="{$bgcolor}">{$issue['views']} {$lang->pro_views}
+<br /><span class="smalltext"><em>{$issue['replies']} {$lang->pro_replies}</em></span></td>
+<td class="{$bgcolor}"><span class="smalltext">{$issue['lastpost_time']}
+<br /><a href="{$issue['project_url']}?action=lastpost">{$lang->pro_lastpost}</a>: {$issue['lastpost_author']}</span></td>
+</tr>]]></template>
+		<template name="mytracker_issue_all" version="1408" myversion="1000"><![CDATA[<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}"  width="100%">
+{$menu}
+<td><table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="5"><strong>{$lang->iss_all_title}</strong></td>
+</tr>
+<tr>
+<td class="tcat" colspan="2"><span class="smalltext"><strong>{$lang->iss_subject}</strong></span></td>
+<td class="tcat" width="150"><span class="smalltext"><strong>{$lang->iss_status}</strong></span></td>
+<td class="tcat" width="100"><span class="smalltext"><strong>{$lang->pro_stats}</strong></span></td>
+<td class="tcat" width="175"><span class="smalltext"><strong>{$lang->pro_lastpost}</span></td>
+</tr>
+{$issues}
+<tr>
+<td class="tfoot" colspan="5" align="right"><form action="issues.php" method="get">
+<input type="hidden" name="issue" value="all" />
+<select name="sortby">
+	<option value="subject" {$sortsel['subject']}>{$lang->sort_by_subject}</option>
+	<option value="lastpost" {$sortsel['lastpost']}>{$lang->sort_by_lastpost}</option>
+	<option value="starter" {$sortsel['starter']}>{$lang->sort_by_starter}</option>
+	<option value="started" {$sortsel['started']}>{$lang->sort_by_started}</option>
+	<option value="views" {$sortsel['views']}>{$lang->sort_by_views}</option>
+</select>
+{$priorities}
+<select name="order">
+	<option value="asc" {$ordersel['asc']}>{$lang->sort_order_asc}</option>
+	<option value="desc" {$ordersel['desc']}>{$lang->sort_order_desc}</option>
+</select>
+<select name="datecut">
+	<option value="1" {$datecutsel['1']}>{$lang->datelimit_1day}</option>
+	<option value="5" {$datecutsel['5']}>{$lang->datelimit_5days}</option>
+	<option value="10" {$datecutsel['10']}>{$lang->datelimit_10days}</option>
+	<option value="20" {$datecutsel['20']}>{$lang->datelimit_20days}</option>
+	<option value="50" {$datecutsel['50']}>{$lang->datelimit_50days}</option>
+	<option value="75" {$datecutsel['75']}>{$lang->datelimit_75days}</option>
+	<option value="100" {$datecutsel['100']}>{$lang->datelimit_100days}</option>
+	<option value="365" {$datecutsel['365']}>{$lang->datelimit_lastyear}</option>
+	<option value="9999" {$datecutsel['9999']}>{$lang->datelimit_beginning}</option>
+</select>
+{$gobutton}
+</form></td>
+</tr>
+</table>
+<div align="right">{$multipage}</div></td>
+</tr>
+</table>]]></template>
+		<template name="mytracker_timeline_activity" version="1408" myversion="1000"><![CDATA[<tr><td><div id="activity{$activity['actid']}" class="{$bgcolor}">
+<a name="act{$activity['actid']}" id="act{$activity['actid']}"></a>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="65" rowspan="2" align="center" class="commentavatar" valign="top">{$avatar}</td>
+		<td valign="top"><div class="float_right smalltext">{$activity['time']}{$mod_actions}</div><strong>{$activity['user']}</strong> {$lang->issue_activity}</td>
+	</tr>
+	<tr>
+		<td valign="top"><div class="commentbox"><div class="float_right {$activity['class']}" style="margin-left: 5px;"></div><span class="smalltext">{$activity['content']}</span></div></td>
+	</tr>
+</table>
+</div></td></tr>
+<td><td height="15"></td></tr>]]></template>
+		<template name="mytracker_timeline_content" version="1408" myversion="1000"><![CDATA[<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}"  width="100%">
+{$menu}
+	<td width="40%" valign="top"><table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" valign="top"><strong>{$lang->iss_timeline}</strong></td>
+</tr>
+<tr>
+<td class="trow1">This page displays the timeline of activity for this Issue - including who left a comment, updated, closed or started the Issue. As well as the timeline of activity, you can see what has changed over time in the Issue. You can also [<a href="{$comment_link}">View All Comments</a>] left by other members.</td>
+</tr>
+</table></td>
+	<td width="60%" valign="top">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+{$issue_timeline}
+</table></td>
+</tr>
+</table>]]></template>
+		<template name="mytracker_comments" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/jquery.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/mytracker.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/facebox.js"></script>
+</head>
+<body>
+{$header}
+<div id="body">
+{$content}
+</div>
+{$footer}
+</body>
+</html>]]></template>
+		<template name="mytracker_comments_content" version="1408" myversion="1000"><![CDATA[<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}"  width="100%">
+{$menu}
+	<td width="40%" valign="top"><table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" valign="top"><strong>Member's Comments</strong></td>
+</tr>
+<tr>
+<td class="trow1">{$lang->iss_comment_info}</td>
+</tr>
+</table>
+<br />{$new_comment}</td>
+	<td width="60%" valign="top">{$issue_comments}</td>
+</tr>
+</table>]]></template>
+		<template name="mytracker_timeline" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/jquery.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/mytracker.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/facebox.js"></script>
+</head>
+<body>
+{$header}
+<div id="body">
+{$content}
+</div>
+{$footer}
+</body>
+</html>]]></template>
+		<template name="mytracker_new_modoptions" version="1408" myversion="1000"><![CDATA[<tr>
+<td class="trow1" valign="top"><strong>{$lang->iss_assign}</strong></td>
+<td class="trow1">{$assignees}</td>
+</tr>
+<tr>
+<td class="trow2" valign="top"><strong>{$lang->iss_complete}</strong></td>
+<td class="trow2">{$pc_complete}</td>
+</tr>
+{$issue_versions}]]></template>
+		<template name="mytracker_new_issueoptions" version="1408" myversion="1000"><![CDATA[<tr>
+<td class="trow1" width="35%" valign="top"><strong>{$lang->iss_project}</strong></td>
+<td class="trow1">{$projects}</td>
+</tr>
+<tr>
+<td class="trow1" width="35%" valign="top"><strong>{$lang->iss_subject}</strong></td>
+<td class="trow1"><input name="subject" type="text" class="textbox" value="{$mybb->input['subject']}" size="1" maxlength="85" style="width:99%" /></td>
+</tr>
+<tr>
+<td class="trow2" valign="top"><strong>{$lang->iss_category}</strong></td>
+<td class="trow2">{$categories}</td>
+</tr>
+<tr>
+<td class="trow1" valign="top"><strong>{$lang->iss_priority}</strong></td>
+<td class="trow1">{$priorities}</td>
+</tr>
+<tr>
+<td class="trow2" valign="top"><strong>{$lang->iss_status}</strong></td>
+<td class="trow2">{$statuses}</td>
+</tr>]]></template>
+		<template name="mytracker_edit_modoptions" version="1408" myversion="1000"><![CDATA[<tr>
+<td class="trow1" valign="top"><strong>{$lang->iss_assign}</strong></td>
+<td class="trow1">{$assignees}</td>
+</tr>
+<tr>
+<td class="trow2" valign="top"><strong>{$lang->iss_complete}</strong></td>
+<td class="trow2">{$pc_complete}</td>
+</tr>
+{$issue_versions}]]></template>
+		<template name="mytracker_new" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/post.js?ver=1400"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/jquery.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/mytracker.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/facebox.js"></script>
+</head>
+<body>
+{$header}
+<div id="body">
+{$content}
+</div>
+{$footer}
+</body>
+</html>]]></template>
+		<template name="mytracker_new_content" version="1408" myversion="1000"><![CDATA[<form name="new" method="post" action="{$form_url}">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}"  width="100%"{$issue['visiblestyle']}>
+{$menu}
+{$errors}
+<td width="40%" valign="top"><table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="2" valign="top"><strong>{$lang->iss_info}</strong></td>
+</tr>
+{$new_options}
+{$mod_options}
+</table></td>
+<td width="60%" valign="top">
+<div><div class="float_right smalltext" style="padding:2px;" id="clicksmilies"><br /></div><strong>{$lang->iss_message}</strong><br /><span class="smalltext">{$lang->new_desc_info}</span></div>
+<br />
+<textarea name="message" id="message" cols="1" rows="10" class="textarea" style="width:99%;">{$mybb->input['message']}</textarea>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/editor.js?ver=1400"></script>
+{$codebuttons}
+<br class="clear" />
+<noscript><br /></noscript>
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" valign="top"><strong>{$lang->important}</strong></td>
+</tr>
+<tr>
+<td class="trow1">{$lang->important_1}</td>
+</tr>
+<tr>
+<td class="trow2"><div align="center">
+<input name="save" type="submit" value="{$lang->post_new}" class="button" /> <a href="{$back_url}"><input name="cancel" type="button" value="{$lang->cancel_button}" class="button" /></a></div></td>
+</tr>
+</table></td>
+</tr>
+</table>
+</form>]]></template>
+		<template name="mytracker_issue_comments_delete" version="1408" myversion="1000"><![CDATA[Are you sure you want to delete this comment?
+<div align="center"><br />
+<form method="post" action="issues.php?issue={$issue['issid']}&amp;action=delete_comment&amp;pid={$pid}">
+<input name="ydelete" type="submit" value="Yes" />&nbsp;&nbsp;<input name="ndelete" type="button" value="No" onclick="jQuery(document).trigger('close.facebox');" />
+</form></div>]]></template>
+		<template name="mytracker_misc_edithistory" version="1408" myversion="1000"><![CDATA[<div><span class="largetext">{$history['subject']}</span><br />
+<span class="smalltext">{$lang->ed_his_author}</span><br />
+<div class="commentbox"><span class="smalltext">{$history['content']}</span></div>
+</div>]]></template>
+		<template name="mytracker_edit" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/post.js?ver=1400"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/jquery.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/mytracker.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/facebox.js"></script>
+</head>
+<body>
+{$header}
+<div id="body">
+{$content}
+</div>
+{$footer}
+</body>
+</html>]]></template>
+		<template name="mytracker_edit_content" version="1408" myversion="1000"><![CDATA[<form method="post" action="edit.php?issue={$issue['issid']}"><table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}"  width="100%"{$issue['visiblestyle']}>
+{$menu}
+<td width="40%" valign="top"><table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="2" valign="top"><strong>{$lang->iss_info}</strong></td>
+</tr>
+<tr>
+<td class="trow1" width="35%" valign="top"><strong>{$lang->iss_subject}</strong></td>
+<td class="trow1"><input name="subject" type="text" class="textbox" value="{$issue['subject']}" size="1" maxlength="85" style="width:99%" /></td>
+</tr>
+<tr>
+<td class="trow2" valign="top"><strong>{$lang->iss_category}</strong></td>
+<td class="trow2">{$categories}</td>
+</tr>
+<tr>
+<td class="trow1" valign="top"><strong>{$lang->iss_priority}</strong></td>
+<td class="trow1">{$priorities}</td>
+</tr>
+<tr>
+<td class="trow2" valign="top"><strong>{$lang->iss_status}</strong></td>
+<td class="trow2">{$statuses}</td>
+</tr>
+{$mod_options}
+</table></td>
+<td width="60%" valign="top"><textarea name="message" id="message" cols="1" rows="10" class="textarea" style="width:99%;">{$issue['message']}</textarea>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/editor.js?ver=1400"></script>
+{$codebuttons}
+<div class="float_right smalltext" style="padding:2px;" id="clicksmilies"></div>
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" valign="top"><strong>{$lang->important}</strong></td>
+</tr>
+<tr>
+<td class="trow1">{$lang->important_1}</td>
+</tr>
+<tr>
+<td class="trow2"><div align="center">
+<input name="save" type="submit" value="Save Changes" class="button" /> <a href="{$issue_url}"><input name="cancel" type="button" value="Cancel Edit" class="button" /></a></div></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<input type="hidden" name="action" value="do_edit" />
+</form>]]></template>
+		<template name="mytracker_issue_newcomment" version="1408" myversion="1000"><![CDATA[<form method="post" action="issues.php?issue={$issue['issid']}"><div id="n_comment"><img src="../images/tracker/user_comment.png" alt="" style="vertical-align:middle" /> <strong>{$lang->iss_newcomment}</strong>
+<br /><span class="smalltext" style="padding-left:20px;"><em>Enter your comment into the box below:</em></span><br /><br />
+<div style="padding-left:20px; text-align:center;"><textarea name="comment" id="comment" cols="50" rows="5"></textarea><br /><br /><input name="makecomm" type="submit" value="Add Comment" class="button" /><input name="action" type="hidden" value="new_comment" /></div>
+</div></form>]]></template>
+		<template name="mytracker_issue_button_visibleoff" version="1408" myversion="1001"><![CDATA[<a href="{$visbutton_link}" name="jscript" onclick="jQuery('#loading').show(); jQuery('#body').load('issues.php?issue={$issue['issid']}&amp;req=ajax&amp;visibility=off', '', function(){ jQuery('#loading').hide(); });"><img src="../images/tracker/visi_off.gif" alt="{$lang->iss_issue_invis}" title="{$lang->iss_issue_invis}" /></a>]]></template>
+		<template name="mytracker_issue_button_visibleon" version="1408" myversion="1000"><![CDATA[<a href="{$visbutton_link}" name="jscript" onclick="jQuery('#loading').show(); jQuery('#body').load('issues.php?issue={$issue['issid']}&amp;req=ajax&amp;visibility=on', '', function(){ jQuery('#loading').hide(); });"><img src="../images/tracker/visi_on.gif" alt="{$lang->iss_issue_vis}" title="{$lang->iss_issue_vis}" /></a>]]></template>
+		<template name="mytracker_issue_quickedit" version="1408" myversion="1001"><![CDATA[<style type="text/css">
+.edit_options {
+line-height: 2em;
+}
+</style>
+<form action="edit.php?action=do_quickedit" method="post">
+<table width="700" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td><span class="largetext">#{$issue['issid']} &raquo;</span> <input name="subject" type="text" class="textbox" value="{$issue['subject']}" size="50" maxlength="85" /></td>
+	</tr>
+	<tr><td><span class="smalltext"><em>{$lang->misc_editing} #{$issue['issid']}</em></span></td></tr>
+	<tr><td height="10"></td></tr>
+</table>
+<div>
+<input type="hidden" name="issue" value="{$issue['issid']}" />
+<div class="float_right">
+<span class="act_update"><strong>{$lang->misc_description}</strong></span><br/>
+<textarea name="message" cols="45" rows="5">{$issue['message']}</textarea>
+<br /><br />
+<div align="center"><input type="submit" class="button" name="save" value="Save Changes" />&nbsp;&nbsp;<input type="button" class="button" name="cancel" value="Cancel Editing" onClick="jQuery().trigger('close.facebox')" /></div>
+</div>
+	<div class="edit_options">
+	<strong>{$lang->iss_category}</strong><span style="position:absolute; left:125px; margin-top:2px;">{$categories}</span><br />
+	<strong>{$lang->iss_priority}</strong><span style="position:absolute; left:125px; margin-top:2px;">{$priorities}</span><br />
+	<strong>{$lang->iss_status}</strong><span style="position:absolute; left:125px; margin-top:2px;">{$statuses}</span><br />
+	<strong>{$lang->iss_assign}</strong><span style="position:absolute; left:125px; margin-top:2px;">{$assignees}</span><br/>
+	<strong>{$lang->iss_complete}</strong><span style="position:absolute; left:125px; margin-top:2px;">{$pc_complete}</span><br/>
+	<strong>{$lang->misc_show_update}</strong><span style="position:absolute; left:125px; margin-top:5px;"><input name="update" type="checkbox" value="1" checked></span>{$issue_versions}
+	</div>
+</div></form>]]></template>
+		<template name="mytracker_issue_timeline" version="1408" myversion="1000"><![CDATA[<tr>
+<td class="{$bgcolor}"><div class="{$activity['class']}">{$activity['mod_action']}{$activity['user']} {$lang->issue_activity}{$active_go}<br/>
+<span class="smalltext"><em>{$activity['time']}</em></span></div></td>
+</tr>]]></template>
+		<template name="mytracker_issue_timeline_nocontent" version="1408" myversion="1000"><![CDATA[<tr>
+<td class="trow1">{$no_content}</td>
+</tr>]]></template>
+		<template name="mytracker_issue_button_edit" version="1408" myversion="1001"><![CDATA[<a href="edit.php?issue={$issue['issid']}" name="jscript" onclick="jQuery.facebox({ ajax: 'tracker_misc.php?action=quickedit&amp;issue={$issue['issid']}' });"><img src="../images/tracker/english/edit.gif" alt="{4lang->iss_edit_issue}" title="{$lang->iss_edit_issue}}" /></a>]]></template>
+		<template name="mytracker_issue_comments" version="1408" myversion="1001"><![CDATA[<div id="comment{$comment['isspid']}"{$comment_class}>
+<a name="comm{$comment['isspid']}" id="comm{$comment['isspid']}"></a>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="65" rowspan="2" align="center" class="commentavatar" valign="top">{$avatar}</td>
+		<td valign="top"><div class="float_right smalltext">{$comment['posted']}{$mod_actions}</div><a href="{$comment['authorlink']}"><strong>{$comment['author']}</strong></a> said...</td>
+	</tr>
+	<tr>
+		<td valign="top"><div class="commentbox"><span class="smalltext">{$comment['comment']}{$edit_details}</span></div></td>
+	</tr>
+</table>
+</div>]]></template>
+		<template name="mytracker_issue" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$project['name']} &raquo; {$lang->dash_lower_issue} {$issue['issid']}</title>
+{$headerinclude}
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/jquery.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/mytracker.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/facebox.js"></script>
+</head>
+<body>
+{$header}
+<div id="body">
+{$content}
+</div>
+{$footer}
+</body>
+</html>]]></template>
+		<template name="mytracker_issue_content" version="1408" myversion="1000"><![CDATA[<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}"  width="100%"{$issue['visiblestyle']}>
+{$menu}
+<td colspan="2">{$issue_buttons}
+<span class="largetext">#{$issue['issid']} &raquo; {$issue['subject']}</span><br />
+<span style="padding-left:15px;" class="smalltext">&raquo; {$lang->iss_reported} {$issue['reportedby']} | {$issue['reported']}{$edited_by}</span></td></tr>
+<tr><td width="40%" rowspan="2" valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td colspan="2" class="thead"><strong>{$lang->iss_info}</strong></td>
+</tr>
+<tr>
+<td class="trow1" align="right" width="40%"><strong>{$lang->iss_category}</strong></td>
+<td class="trow1">{$issue['categoryname']}</td>
+</tr>
+<tr>
+<td class="trow2" align="right"><strong>{$lang->iss_priority}</strong></td>
+<td class="trow2">{$issue['priorityname']}</td>
+</tr>
+<tr>
+<td class="trow1" align="right"><strong>{$lang->iss_status}</strong></td>
+<td class="trow1">{$issue['statusname']}</td>
+</tr>
+<tr>
+<td class="trow2" align="right"><strong>{$lang->iss_assign}</strong></td>
+<td class="trow2">{$issue['assignedto']}</td>
+</tr>
+<tr>
+<td class="trow1" align="right"><strong>{$lang->iss_complete}</strong></td>
+<td class="trow1">{$issue['complete']}%</td>
+</tr>
+</table>
+<br />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead"><div class="float_right">[<a href="{$timeline_link}">{$lang->iss_act_details}</a>]</div><strong>{$lang->iss_timeline}</strong></td>
+</tr>
+{$issue_timeline}
+</table></td>
+	<td valign="top"><img src="../images/tracker/issue.png" alt="" style="vertical-align:middle" /> <strong>{$lang->iss_problem}</strong><div style="margin-top:5px; margin-bottom:10px; padding:5px; border:1px solid #CCCCCC; {$issue['style']}">{$issue['message']}</div><br class="clear" /><img src="../images/tracker/comments.png" alt="" style="vertical-align:middle" /> <strong>{$lang->iss_comments}</strong>
+{$issue_comments}
+<div align="right" class="smalltext"><br />{$issue['comments']} {$lang->iss_p_comments}{$more_comments}{$leave_comments}</div></td>
+</tr>
+</table>]]></template>
+		<template name="mytracker_project_nocontent" version="1408" myversion="1000"><![CDATA[<tr>
+<td colspan="5" class="trow1">No reports could be found!{$search_option}</td>
+</tr>]]></template>
+		<template name="mytracker_project_issues_content" version="1408" myversion="1001"><![CDATA[<tr {$issue['style']}>
+<td width="1"><img src="{$mybb->settings['bburl']}/{$theme['imgdir']}/{$folder}.gif" alt="{$folder_label}" title="{$folder_label}" /></td>
+<td valign="top"><a href="{$issue['link']}"{$new_class}>{$issue['subject']}</a>
+<br /><span class="smalltext">{$issue['author']}{$current_status}</span></td>
+<td style="white-space: nowrap" valign="top"><span class="smalltext">{$issue['lastpostinfo']}</span></td>
+</tr>]]></template>
+		<template name="mytracker_project_features" version="1408" myversion="1000"><![CDATA[<table width="100%" border="0" cellspacing="0" cellpadding="0">
+{$project_menu}
+<td height="0"></td></tr>
+</table>
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td colspan="3" class="thead"><strong>{$project['name']} {$lang->pro_request} {$lang->features}</strong></td>
+</tr>
+<tr>
+<td class="tcat" colspan="2"><span class="smalltext"><strong>{$lang->feature}</strong></span></td>
+<td class="tcat" width="200"><span class="smalltext"><strong>{$lang->pro_lastpost}</strong></span></td>
+</tr>
+{$features_content}
+</table>
+<div align="right"><div class="float_left"><a href="new.php?action=newidea"><img src="../images/tracker/english/newidea.gif" alt="{$lang->fea_report}" title="{$lang->fea_report}" /></a></div>{$multipage_features}</div>]]></template>
+		<template name="mytracker_project_issues" version="1408" myversion="1000"><![CDATA[<table width="100%" border="0" cellspacing="0" cellpadding="0">
+{$project_menu}
+<td height="0"></td></tr>
+</table>
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td colspan="3" class="thead"><strong>{$project['name']} {$lang->issues}</strong></td>
+</tr>
+<tr>
+<td class="tcat" colspan="2"><span class="smalltext"><strong>{$lang->pro_issue_name}</strong></span></td>
+<td class="tcat" width="200"><span class="smalltext"><strong>{$lang->pro_lastpost}</strong></span></td>
+</tr>
+{$issues_content}
+</table>
+<div align="right"><div class="float_left"><a href="new.php?action=newissue&amp;project={$project['proid']}"><img src="../images/tracker/english/newissue.gif" alt="{$lang->new_report}" title="{$lang->new_report}" /></a></div>{$multipage_issues}</div>]]></template>
+		<template name="mytracker_project_versions_content" version="1408" myversion="1000"><![CDATA[<tr>
+<td valign="top" class="{$bgcolor}"><a href="{$version['link']}"><strong>{$version['name']}</strong></a></td>
+<td width="80" align="center" style="white-space: nowrap" valign="top" class="{$bgcolor}"><span class="smalltext">{$version['stagename']}</span></td>
+<td width="80" align="center" style="white-space: nowrap;" valign="top" class="{$bgcolor}"><span class="smalltext">{$version['issues']}</span></td>
+<td width="150" style="white-space: nowrap" valign="top" class="{$bgcolor}"><span class="smalltext">{$version['lastpostinfo']}</span></td>
+</tr>]]></template>
+		<template name="mytracker_project_versions" version="1408" myversion="1000"><![CDATA[<table width="100%" border="0" cellspacing="0" cellpadding="0">
+{$project_menu}
+<td height="0"></td></tr>
+</table>
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td colspan="4" class="thead"><strong>{$project['name']} {$lang->pro_request} Versions</strong></td>
+</tr>
+<tr>
+<td class="tcat"><span class="smalltext"><strong>{$lang->pro_version_name}</strong></span></td>
+<td class="tcat" align="center"><span class="smalltext"><strong>{$lang->pro_stage}</strong></span></td>
+<td class="tcat" align="center"><span class="smalltext"><strong>{$lang->dash_issues}</strong></span></td>
+<td class="tcat"><span class="smalltext"><strong>{$lang->pro_lastpost}</strong></span></td>
+</tr>
+{$version_content}
+</table>
+<div align="right">{$multipage}</div>]]></template>
+		<template name="mytracker_index_latest_activity" version="1408" myversion="1000"><![CDATA[<tr>
+<td class="{$bgcolor}" colspan="2"><div class="{$activity['style']}">{$activity['mod_action']}
+{$activity['user']} {$lang->dash_act_has} {$lang->user_activity} {$active_go}<br /><span class="smalltext"><em>{$activity['time']}</em></span></div></td>
+</tr>]]></template>
+		<template name="mytracker_project" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$project['name']}</title>
+{$headerinclude}
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/jquery.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/mytracker.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/facebox.js"></script>
+</head>
+<body>
+{$header}
+<div id="body">
+{$content}
+</div>
+{$footer}
+</body>
+</html>]]></template>
+		<template name="mytracker_project_content" version="1408" myversion="1000"><![CDATA[<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+{$menu}
+<td valign="top" width="40%">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="2" valign="top"><strong>{$lang->pro_info}</strong></td>
+</tr>
+<tr>
+<td class="trow1" width="25%" valign="top"><strong>{$lang->pro_name}</strong></td>
+<td class="trow1">{$project['name']}</td>
+</tr>
+<tr>
+<td class="trow2" valign="top"><strong>{$lang->pro_description}</strong></td>
+<td class="trow2">{$project['description']}</td>
+</tr>
+<tr>
+<td class="trow1" valign="top"><strong>{$lang->pro_started}</strong></td>
+<td class="trow1">{$project['starttime']}</td>
+</tr>
+<tr>
+<td class="trow2" valign="top"><strong>{$lang->pro_stage}</strong></td>
+<td class="trow2">{$project['project_stage']}</td>
+</tr>
+<tr>
+<td class="trow1" valign="top"><strong>{$lang->issues}</strong></td>
+<td class="trow1">{$project['issues']}</td>
+</tr>
+{$features_info}
+</table></td>
+<td valign="top"><div id="proj_content">
+{$project_content}
+</div></td>
+</tr>
+</table>]]></template>
+		<template name="mytracker_index_projectlist" version="1408" myversion="1001"><![CDATA[<tr>
+<td width="25" class="{$bgcolor}" align="center"><img src="../images/tracker/{$lightbulb['folder']}.gif" alt="{$lightbulb['altonoff']}" title="{$lightbulb['altonoff']}" /></td>
+<td class="{$bgcolor}"><a href="{$project['link']}"><strong>{$project['name']}</strong></a>
+<br />
+<span class="smalltext">{$project['description']}</span></td>
+{$project_features}
+<td class="{$bgcolor}" align="center">{$issue_count}</td>
+<td class="{$bgcolor}"><div class="progress-container"><div style="width: {$project['percentbar']}%;">&nbsp;{$project['percent']}%</div></div></td>
+</tr>]]></template>
+		<template name="mytracker_index" version="1408" myversion="1001"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/jquery.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/mytracker.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/facebox.js"></script>
+</head>
+<body>
+{$header}
+<div id="body">
+{$content}
+</div>
+{$footer}
+</body>
+</html>]]></template>
+		<template name="mytracker_index_content" version="1408" myversion="1000"><![CDATA[<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+{$menu}
+<td valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td colspan="5" class="thead"><strong>{$lang->dash_active_projects}</strong></td>
+</tr>
+<tr>
+<td class="tcat" colspan="2"><span class="smalltext"><strong>{$lang->dash_projects}</strong></span></td>
+{$project_features_cat}
+<td class="tcat" width="100" align="center"><span class="smalltext"><strong>{$lang->dash_issues}</strong></span></td>
+<td class="tcat" width="200"><span class="smalltext"><strong>{$lang->dash_complete}</strong></span></td>
+</tr>
+{$project_list}
+</table></td>
+</tr>
+</table>
+<table width="100%" border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td valign="top" width="60%"><table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead"><strong>{$lang->dash_activity}</strong></td>
+</tr>
+{$latest_activity}
+</table></td>
+<td valign="top" width="40%">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead"><strong>{$mybb->settings['trackername']} {$lang->dash_stats}</strong></td>
+</tr>
+<tr>
+<td class="tcat"><span class="smalltext"><strong>{$lang->dash_stats}</strong></span></td>
+</tr>
+<tr>
+<td class="trow1"><span class="smalltext">{$lang->dash_stats_issues}<br />{$lang->dash_stats_users}</span></td>
+</tr>
+</table></td>
+</tr>
+</table>]]></template>
+
+<template name="mytracker_feature_button_visibleon" version="1408" myversion="1000"><![CDATA[<a href="{$visbutton_link}" name="jscript" onclick="jQuery('#loading').show(); jQuery('#body').load('features.php?feature={$feature['featid']}&amp;req=ajax&amp;visibility=on', '', function(){ jQuery('#loading').hide(); });"><img src="../images/tracker/visi_on.gif" alt="{$lang->fea_vis}" title="{$lang->fea_vis}" /></a>]]></template>
+
+<template name="mytracker_feature_button_visibleoff" version="1408" myversion="1000"><![CDATA[<a href="{$visbutton_link}" name="jscript" onclick="jQuery('#loading').show(); jQuery('#body').load('features.php?feature={$feature['featid']}&amp;req=ajax&amp;visibility=off', '', function(){ jQuery('#loading').hide(); });"><img src="../images/tracker/visi_off.gif" alt="{$lang->fea_invis}" title="{$lang->fea_invis}" /></a>]]></template>
+
+<template name="mytracker_feature_button_edit" version="1408" myversion="1001"><![CDATA[<a href="edit.php?feature={$feature['featid']}" name="jscript" onclick="jQuery.facebox({ ajax: 'tracker_misc.php?action=quickedit&amp;feature={$feature['featid']}' });"><img src="../images/tracker/english/edit.gif" alt="{$lang->fea_edit_fea}" title="{$lang->fea_edit_fea}" /></a>]]></template>
+
+<template name="mytracker_feature_button_delete" version="1408" myversion="1001"><![CDATA[<a href="delete.php?feature={$feature['featid']}"><img src="../images/tracker/english/delete.gif" alt="{$lang->fea_delete_fea}" title="{$lang->fea_delete_fea}" /></a>]]></template>
+
+<template name="mytracker_feature_delete" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+<form action="delete.php" method="post">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="2"><strong>{$lang->delete_feature} - {$feature['subject']}</strong></td>
+</tr>
+<tr>
+<td class="trow1" colspan="2">{$lang->confirm_delete_feature}</td>
+</tr>
+</table>
+<br />
+<div align="center"><input type="submit" class="button" name="submit" value="{$lang->delete_feature}" /></div>
+<input type="hidden" name="action" value="do_delete" />
+<input type="hidden" name="feature" value="{$feature['featid']}" />
+</form>
+{$footer}
+</body>
+</html>]]></template>
+
+<template name="mytracker_feature_edit" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/post.js?ver=1400"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/jquery.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/mytracker.js"></script>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tracker/facebox.js"></script>
+</head>
+<body>
+{$header}
+<div id="body">
+<form method="post" action="edit.php?feature={$feature['featid']}"><table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}"  width="100%"{$feature['visiblestyle']}>
+{$menu}
+		<tr>
+			<td width="40%" rowspan="3" valign="top">{$lang->important_fea}</td>
+			<td valign="top" width="10%"><strong>Subject:</strong></td>
+			<td valign="top"><input name="subject" type="text" value="{$feature['subject']}" style="width:99%;" class="textbox"></td>
+		</tr>
+
+		<tr><td width="60%" colspan="2" valign="top"><textarea name="message" id="message" cols="1" rows="10" class="textarea" style="width:99%;">{$feature['message']}</textarea>
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/editor.js?ver=1400"></script>
+{$codebuttons}
+<div class="float_right smalltext" style="padding:2px;" id="clicksmilies"></div>
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}">
+<tr>
+<td align="center"><br /><div align="center">
+<input name="save" type="submit" value="{$lang->save_button}" class="button" /> <a href="{$feature_url}"><input name="cancel" type="button" value="{$lang->cancel_button}" class="button" /></a></div></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<input type="hidden" name="action" value="do_edit" />
+</form>
+</div>
+{$footer}
+</body>
+</html>]]></template>
+
+<template name="mytracker_feature_quickedit" version="1408" myversion="1000"><![CDATA[<style type="text/css">
+.edit_options {
+line-height: 2em;
+}
+</style>
+<form action="edit.php?action=do_quickedit" method="post">
+<input type="hidden" name="feature" value="{$feature['featid']}" />
+<table width="700" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td><span class="largetext">#{$feature['featid']} &raquo;</span> <input name="subject" type="text" class="textbox" value="{$feature['subject']}" size="50" maxlength="85" /></td>
+	</tr>
+	<tr><td height="10"></td></tr>
+	<tr><td><span class="smalltext">{$lang->misc_suggested}</span></td></tr>
+	<tr><td height="10"></td></tr>
+</table>
+<div>
+<div class="float_right">
+<strong>{$lang->misc_description}</strong><br/>
+<textarea name="message" cols="45" rows="5">{$feature['message']}</textarea>
+<br /><br />
+<div align="center"><input type="submit" class="button" name="save" value="{$lang->save_button}" />&nbsp;&nbsp;<input type="button" class="button" name="cancel" value="{$lang->cancel_button}" onClick="jQuery().trigger('close.facebox')" /></div>
+</div>
+	<div style="height:175px; padding:8px;">{$lang->important_fea}</div>
+</div></form>]]></template>
+
+<template name="mytracker_issue_button_delete" version="1408" myversion="1001"><![CDATA[<a href="delete.php?issue={$issue['issid']}"><img src="../images/tracker/english/delete.gif" alt="{$lang->iss_delete_issue}" title="{$lang->iss_delete_issue}" /></a>]]></template>
+
+<template name="mytracker_issue_commentinedit" version="1408" myversion="1000"><![CDATA[<div id="comment{$comment['isspid']}"{$comment_class}>
+<a name="comm{$comment['isspid']}" id="comm{$comment['isspid']}"></a>
+<form method="post" action="issues.php?issue={$comment['issid']}">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="65" rowspan="2" align="center" class="commentavatar" valign="top">{$avatar}</td>
+		<td valign="top"><div class="float_right smalltext">{$comment['posted']}{$mod_actions}</div><a href="{$comment['authorlink']}"><strong>{$comment['author']}</strong></a> said...</td>
+	</tr>
+	<tr>
+		<td valign="top"><div class="commentbox"><textarea name="comment" id="comment" cols="1" rows="5" style="width:99%">{$comment['message']}</textarea></div></td>
+	</tr>
+	<tr>
+		<td valign="top" colspan="2"><div align="right"><input name="makecomm" type="submit" value="{$lang->ed_update_comment}" class="button" /></div></td>
+	</tr>
+</table>
+<input name="action" type="hidden" value="edit_comment" /><input name="pid" type="hidden" value="{$comment['isspid']}" /><input name="all" type="hidden" value="1" />
+</form>
+</div>]]></template>
+
+<template name="mytracker_issue_delete" version="1408" myversion="1000"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$mybb->settings['trackername']}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+<form action="delete.php" method="post">
+<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="2"><strong>{$lang->delete_issue} - {$issue['subject']}</strong></td>
+</tr>
+<tr>
+<td class="trow1" colspan="2">{$lang->confirm_delete_issue}</td>
+</tr>
+</table>
+<br />
+<div align="center"><input type="submit" class="button" name="submit" value="{$lang->delete_issue}" /></div>
+<input type="hidden" name="action" value="do_delete" />
+<input type="hidden" name="issue" value="{$issue['issid']}" />
+</form>
+{$footer}
+</body>
+</html>]]></template>
+
+<template name="mytracker_issue_editcomment" version="1408" myversion="1000"><![CDATA[<form method="post" action="issues.php?issue={$comment['issid']}"><div id="e_comment"><img src="../images/tracker/user_comment.png" alt="" style="vertical-align:middle" /> <strong>{$lang->ed_edit_a_comment}</strong>
+<br /><span class="smalltext" style="padding-left:20px;"><em>{$lang->ed_edit_comment}</em></span><br /><br />
+<div style="padding-left:20px; text-align:center;"><textarea name="comment" id="comment" cols="50" rows="5">{$comment['message']}</textarea><br /><br /><input name="makecomm" type="submit" value="{$lang->ed_update_comment}" class="button" /><input name="action" type="hidden" value="edit_comment" /><input name="pid" type="hidden" value="{$comment['isspid']}" />{$all}</div>
+</div></form>]]></template>
+
+
+</templates>
+</theme>
