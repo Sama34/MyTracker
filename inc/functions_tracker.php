@@ -32,41 +32,41 @@ if(!$active_check['active']['mytracker'])
 //---------------------------------------------------
 if($mybb->settings['trackerseo'] == "yes" && ($mybb->settings['seourls'] == "yes" || ($mybb->settings['seourls'] == "auto" && $_SERVER['SEO_SUPPORT'] == 1)))
 {
-	define('PROJECT_LIST_URL', "projects.html");
-	define('PROJECT_URL', "project-{project}.html");
-	define('PROJECT_VERSION', "project-{project}-versions.html");
-	define('PROJECT_BUGS_URL', "project-{project}-issues.html");
-	define('PROJECT_BUGS_PAGED', "project-{project}-issues-{page}.html");
-	define('PROJECT_FEATURES_URL', "project-{project}-features.html");
-	define('PROJECT_FEATURES_PAGED', "project-{project}-features-{page}.html");
-	define('ISSUE_ALL_URL', "issues.html");
-	define('ISSUE_LIST_URL', "issues-{page}.html");
-	define('ISSUE_URL', "issue-{issue}.html");
-	define('FEATURE_LIST_URL', "features.html");
-	define('FEATURE_URL', "feature-{feature}.html");
+	define('PROJECT_LIST_URL', "/tracker/projects.html");
+	define('PROJECT_URL', "/tracker/project-{project}.html");
+	define('PROJECT_VERSION', "/tracker/project-{project}-versions.html");
+	define('PROJECT_BUGS_URL', "/tracker/project-{project}-issues.html");
+	define('PROJECT_BUGS_PAGED', "/tracker/project-{project}-issues-{page}.html");
+	define('PROJECT_FEATURES_URL', "/tracker/project-{project}-features.html");
+	define('PROJECT_FEATURES_PAGED', "/tracker/project-{project}-features-{page}.html");
+	define('ISSUE_ALL_URL', "/tracker/issues.html");
+	define('ISSUE_LIST_URL', "/tracker/issues-{page}.html");
+	define('ISSUE_URL', "/tracker/issue-{issue}.html");
+	define('FEATURE_LIST_URL', "/tracker/features.html");
+	define('FEATURE_URL', "/tracker/feature-{feature}.html");
 	define('USER_URL', "../user-{uid}.html"); // Because we're in a directory!
-	define('COMMENT_URL', "issue-{issue}-comments.html");
-	define('FEATURE_COMMENT_URL', "feature-{feature}-comments.html");
-	define('TIMELINE_URL', "issue-{issue}-timeline.html");
+	define('COMMENT_URL', "/tracker/issue-{issue}-comments.html");
+	define('FEATURE_COMMENT_URL', "/tracker/feature-{feature}-comments.html");
+	define('TIMELINE_URL', "/tracker/issue-{issue}-timeline.html");
 }
 else
 {
-	define('PROJECT_LIST_URL', "projects.php");
-	define('PROJECT_URL', "projects.php?project={project}");
-	define('PROJECT_VERSION', "projects.php?project={project}&amp;view=versions");
-	define('PROJECT_BUGS_URL', "projects.php?project={project}&view=issues");
-	define('PROJECT_BUGS_PAGED', "projects.php?project={project}&view=issues&page={page}");
-	define('PROJECT_FEATURES_URL', "projects.php?project={project}&view=features");
-	define('PROJECT_FEATURES_PAGED', "projects.php?project={project}&view=features&page={page}");
-	define('ISSUE_ALL_URL', "issues.php?issue=all");
-	define('ISSUE_LIST_URL', "issues.php?issue=all&page={page}");
-	define('ISSUE_URL', "issues.php?issue={issue}");
-	define('FEATURE_LIST_URL', "features.php");
-	define('FEATURE_URL', "features.php?feature={feature}");
+	define('PROJECT_LIST_URL', "/tracker/projects.php");
+	define('PROJECT_URL', "/tracker/projects.php?project={project}");
+	define('PROJECT_VERSION', "/tracker/projects.php?project={project}&amp;view=versions");
+	define('PROJECT_BUGS_URL', "/tracker/projects.php?project={project}&view=issues");
+	define('PROJECT_BUGS_PAGED', "/tracker/projects.php?project={project}&view=issues&page={page}");
+	define('PROJECT_FEATURES_URL', "/tracker/projects.php?project={project}&view=features");
+	define('PROJECT_FEATURES_PAGED', "/tracker/projects.php?project={project}&view=features&page={page}");
+	define('ISSUE_ALL_URL', "/tracker/issues.php?issue=all");
+	define('ISSUE_LIST_URL', "/tracker/issues.php?issue=all&page={page}");
+	define('ISSUE_URL', "/tracker/issues.php?issue={issue}");
+	define('FEATURE_LIST_URL', "/tracker/features.php");
+	define('FEATURE_URL', "/tracker/features.php?feature={feature}");
 	define('USER_URL', "../member.php?action=profile&uid={uid}");
-	define('COMMENT_URL', "comments.php?issue={issue}");
-	define('FEATURE_COMMENT_URL', "comments.php?feature={feature}");
-	define('TIMELINE_URL', "timeline.php?issue={issue}");
+	define('COMMENT_URL', "/tracker/comments.php?issue={issue}");
+	define('FEATURE_COMMENT_URL', "/tracker/comments.php?feature={feature}");
+	define('TIMELINE_URL', "/tracker/timeline.php?issue={issue}");
 }
 
 //---------------------------------------------------

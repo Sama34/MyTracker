@@ -132,7 +132,7 @@ if($mybb->input['issue'])
 			// Mod Actions
 			if($mybb->usergroup['canmodtrack'] == 1 || $mybb->user['developer'] == 1)
 			{
-				$mod_actions = " | <a href=\"comments.php?issue=".$comment['issid']."&amp;action=edit&amp;all=true&amp;pid=".$comment['isspid']."#comm".$comment['isspid']."\" name=\"jscript\" onclick=\"jQuery.facebox({ ajax: 'tracker_misc.php?action=editcomment&amp;issue={$issue['issid']}&amp;pid={$comment['isspid']}&amp;all=true' });\">{$lang->iss_edit_comment}</a> &middot; <a href=\"issues.php?issue={$issue['issid']}&amp;action=delete_comment&amp;pid={$comment['isspid']}&amp;ydelete=1\" name=\"jscript\" onclick=\"jQuery.facebox({ ajax: 'tracker_misc.php?action=deletecomment&amp;issue={$issue['issid']}&amp;pid={$comment['isspid']}' });\">$lang->iss_delete_comment</a> ";
+				$mod_actions = " | <a href=\"comments.php?issue=".$comment['issid']."&amp;action=edit&amp;all=true&amp;pid=".$comment['isspid']."#comm".$comment['isspid']."\" name=\"jscript\" onclick=\"jQuery.facebox({ ajax: 'tracker_misc.php?action=editcomment&amp;issue={$issue['issid']}&amp;pid={$comment['isspid']}&amp;all=true' });\">{$lang->iss_edit_comment}</a> &middot; <a href=\"/tracker/issue-{$issue['issid']}.html&amp;action=delete_comment&amp;pid={$comment['isspid']}&amp;ydelete=1\" name=\"jscript\" onclick=\"jQuery.facebox({ ajax: 'tracker_misc.php?action=deletecomment&amp;issue={$issue['issid']}&amp;pid={$comment['isspid']}' });\">$lang->iss_delete_comment</a> ";
 			}
 			else
 			{
