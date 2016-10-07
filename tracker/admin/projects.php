@@ -113,7 +113,7 @@ if($mybb->input['action'] == "new" || $mybb->input['action'] == "do_new")
 				"lastpostsubject" => ''
 			);
 			$db->insert_query("tracker_projects", $insert_array);
-			redirect("projects.php", $lang->created_project);
+			redirect("/tracker/admin/projects.php", $lang->created_project);
 		}
 		
 		// If we've tried to post, show the posted options instead
@@ -188,13 +188,13 @@ if($mybb->input['action'] == "managedevs")
 				{
 					$db->update_query("usergroups", array("canmodtrack" => 0), "gid = '".$change_group."'");
 					$cache->update_usergroups();
-					redirect("projects.php?action=managedevs", $lang->group_updated);
+					redirect("/tracker/admin/projects.php?action=managedevs", $lang->group_updated);
 				}
 				elseif($group_info['canmodtrack'] == 0 && $group_info['cancp'] != 1)
 				{
 					$db->update_query("usergroups", array("canmodtrack" => 1), "gid = '".$change_group."'");
 					$cache->update_usergroups();
-					redirect("projects.php?action=managedevs", $lang->group_updated);
+					redirect("/tracker/admin/projects.php?action=managedevs", $lang->group_updated);
 				}
 				elseif($group_info['cancp'] == 1)
 				{
@@ -221,7 +221,7 @@ if($mybb->input['action'] == "managedevs")
 		{
 			// Update the developer info
 			$db->update_query("users", array("developer" => '1'), "username = '".$db->escape_string($mybb->input['username'])."'");
-			redirect("projects.php?action=managedevs", $lang->added_dev);
+			redirect("/tracker/admin/projects.php?action=managedevs", $lang->added_dev);
 		}
 		else
 		{
@@ -240,7 +240,7 @@ if($mybb->input['action'] == "managedevs")
 			
 			// Remove the "assigned" tasks for this user
 			$db->update_query("tracker_issues", array("assignee" => '0', "assignname" => 'None'), "assignee = '".$developer."'"); 
-			redirect("projects.php?action=managedevs", $lang->removed_dev);
+			redirect("/tracker/admin/projects.php?action=managedevs", $lang->removed_dev);
 		}
 		else
 		{
@@ -377,7 +377,7 @@ if($mybb->input['action'] == "delete" || $mybb->input['action'] == "do_delete")
 		$db->delete_query("tracker_projects", "proid = '".$mybb->input['project']."'");
 		$db->delete_query("tracker_projectsread", "proid = '".$mybb->input['project']."'");
 
-		redirect("projects.php", $lang->project_deleted);
+		redirect("/tracker/admin/projects.php", $lang->project_deleted);
 	}
 
 	eval("\$trackercp_projects_delete = \"".$templates->get("mytrackercp_projects_delete")."\";");
@@ -434,7 +434,7 @@ if($mybb->input['action'] == "edit" || $mybb->input['action'] == "do_edit")
 				"allowfeats" => intval($mybb->input['features'])
 			);
 			$db->update_query("tracker_projects", $update_array, "proid = '".$project['proid']."'");
-			redirect("projects.php", $lang->saved_project);
+			redirect("/tracker/admin/projects.php", $lang->saved_project);
 		}
 	}
 	
