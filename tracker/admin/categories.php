@@ -131,7 +131,7 @@ if($mybb->input['action'] == "new" || $mybb->input['action'] == "do_new")
 			}
 			
 			$db->insert_query("tracker_categories", $insert_array);
-			redirect("categories.php", $lang->created_category);
+			redirect("/tracker/admin/categories.php", $lang->created_category);
 		}
 	}
 
@@ -181,7 +181,7 @@ if($mybb->input['action'] == "delete" || $mybb->input['action'] == "do_delete")
 			$db->update_query("tracker_issues", array("category" => 1), "category = '".$category['catid']."'");
 			// Delete
 			$db->delete_query("tracker_categories", "catid = '".$category['catid']."'");
-			redirect("categories.php", $lang->cat_deleted);
+			redirect("/tracker/admin/categories.php", $lang->cat_deleted);
 		}
 		
 		// Output normal page if we're not deleting - we haven't confirmed yet		
@@ -258,7 +258,7 @@ if($mybb->input['action'] == "edit" || $mybb->input['action'] == "do_edit")
 				}
 
 				$db->update_query("tracker_categories", $update_array, "catid = '".$category['catid']."'");
-				redirect("categories.php", $lang->category_saved);
+				redirect("/tracker/admin/categories.php", $lang->category_saved);
 			}
 		}
 
